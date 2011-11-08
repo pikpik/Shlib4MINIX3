@@ -60,6 +60,7 @@ elf-libraries: includes
 commands: includes libraries
 	$(MAKE) -C commands all
 	$(MAKE) -C bin all
+	$(MAKE) -C sbin all
 	$(MAKE) -C usr.bin all
 	$(MAKE) -C libexec all
 
