@@ -1,8 +1,8 @@
-# Makefile for usr.bin
+# Makefile for libexec
 
 .include <bsd.own.mk>
 
 # NetBSD imports
-SUBDIR= makewhatis
+SUBDIR= ld.aout_so ld.elf_so makewhatis
 
 .include <bsd.subdir.mk>
