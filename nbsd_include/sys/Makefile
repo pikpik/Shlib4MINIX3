@@ -18,7 +18,7 @@ INCS+=	ansi.h atomic.h \
 	float_ieee754.h gcq.h gmon.h hash.h \
 	ieee754.h inttypes.h ioctl.h ipc.h \
 	localedef.h \
-	md4.h md5.h \
+	mbuf.h md4.h md5.h \
 	mman.h mount.h \
 	null.h \
 	param.h poll.h ptrace.h \
