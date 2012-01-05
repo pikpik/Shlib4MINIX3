@@ -340,6 +340,7 @@ PRIVATE int sef_cb_init_fresh(int type, sef_init_info_t *info)
 	CALLMAP(VM_MUNMAP_TEXT, do_munmap);
 	CALLMAP(VM_MAP_PHYS, do_map_phys);
 	CALLMAP(VM_UNMAP_PHYS, do_unmap_phys);
+	CALLMAP(VM_MPROTECT, do_mprotect);
 
 	/* Calls from PM. */
 	CALLMAP(VM_EXIT, do_exit);

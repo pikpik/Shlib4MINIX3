@@ -924,6 +924,7 @@
 #	define VMU_OFFSET		m1_p1
 #	define VMU_LENGTH		m1_p2
 #	define VMU_RETADDR		m1_p3
+#define VM_MPROTECT		(VM_RQ_BASE+44)	/* isn't sequential */
 
 /* to VM: inform VM about a region of memory that is used for
  * bus-master DMA
@@ -1062,8 +1063,9 @@
 
 /* Basic vm calls allowed to every process. */
 #define VM_BASIC_CALLS \
-    VM_MMAP, VM_MUNMAP, VM_MUNMAP_TEXT, VM_MAP_PHYS, VM_UNMAP_PHYS, \
-    VM_FORGETBLOCKS, VM_FORGETBLOCK, VM_YIELDBLOCKGETBLOCK, VM_INFO
+    VM_MMAP, VM_MUNMAP, VM_MUNMAP_TEXT, VM_MPROTECT, \
+    VM_MAP_PHYS, VM_UNMAP_PHYS, VM_FORGETBLOCKS, \
+    VM_FORGETBLOCK, VM_YIELDBLOCKGETBLOCK, VM_INFO
 
 /*===========================================================================*
  *                Messages for IPC server				     *

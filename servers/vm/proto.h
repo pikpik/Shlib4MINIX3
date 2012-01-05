@@ -92,6 +92,9 @@ _PROTOTYPE(int do_get_phys, (message *m)                                );
 _PROTOTYPE(int do_shared_unmap, (message *m)                            );
 _PROTOTYPE(int do_get_refcount, (message *m)                            );
 
+/* mprotect.c */
+_PROTOTYPE(int do_mprotect, (message *msg)				);
+
 /* pagefaults.c */
 _PROTOTYPE( void do_pagefaults, (message *m)				);
 _PROTOTYPE( void do_memory, (void)				);

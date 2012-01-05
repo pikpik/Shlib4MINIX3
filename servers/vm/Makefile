@@ -3,8 +3,9 @@
 
 PROG=	vm
 SRCS=	main.c alloc.c utility.c exec.c exit.c fork.c break.c \
-	signal.c mmap.c slaballoc.c region.c pagefaults.c addravl.c \
-	physravl.c rs.c queryexit.c yieldedavl.c regionavl.c
+	signal.c mmap.c mprotect.c slaballoc.c region.c \
+	pagefaults.c addravl.c physravl.c rs.c queryexit.c \
+	yieldedavl.c regionavl.c
 
 DPADD+=	${LIBSYS}
 LDADD+=	-lsys
