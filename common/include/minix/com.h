@@ -1053,7 +1053,7 @@
 #	define VM_WE_EP		m1_i1
 
 /* Total. */
-#define NR_VM_CALLS				44
+#define NR_VM_CALLS				45
 #define VM_CALL_MASK_SIZE			BITMAP_CHUNKS(NR_VM_CALLS)
 
 /* not handled as a normal VM call, thus at the end of the reserved rage */
